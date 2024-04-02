@@ -4,20 +4,28 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:/path/to/g++.exe",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
                 "-std=c++17",
                 "-I${workspaceFolder}/include",
+                "-I${workspaceFolder}/imgui",
+                "-I${workspaceFolder}/imgui/backends",
                 "-L${workspaceFolder}/lib",
                 "${workspaceFolder}/src/main.cpp",
                 "${workspaceFolder}/src/glad.c",
+                "${workspaceFolder}/imgui/*.cpp",
+                "${workspaceFolder}/imgui/*.h",
+                "${workspaceFolder}/imgui/backends/imgui_impl_glfw.cpp",
+                "${workspaceFolder}/imgui/backends/imgui_impl_glfw.h",
+                "${workspaceFolder}/imgui/backends/imgui_impl_opengl3.cpp",
+                "${workspaceFolder}/imgui/backends/imgui_impl_opengl3.h",
                 "-lglfw3dll",
                 "-o",
                 "${workspaceFolder}/cutable.exe"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "C:\\msys64\\mingw64\\bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -26,7 +34,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "compiler: C:/C:/path/to/g++.exe"
+            "detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
         }
     ]
 }
