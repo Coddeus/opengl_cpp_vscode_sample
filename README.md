@@ -1,6 +1,7 @@
 # opengl_cpp_vscode_sample
 Code example to test your VSCode C++ OpenGL setup with GLFW/GLAD.  
-Done on Windows, with the g++ compiler.
+Done on Windows and Ubuntu, with the g++ compiler.  
+Note: on linux, you have to compile glfw from source.
 
 ## How to use this repo
 - watch [this video](youtube.com).
